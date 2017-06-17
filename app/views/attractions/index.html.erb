@@ -1,0 +1,5 @@
+<h1>Attractions Index</h1>
+
+<%= link_to "New Attraction", new_attraction_path if current_user.admin? %><br>
+
+<%= render @attractions %>

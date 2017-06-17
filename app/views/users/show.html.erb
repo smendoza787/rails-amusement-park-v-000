@@ -1,0 +1,9 @@
+<% if @user.admin %>
+  <h1>ADMIN</h1>
+<% else %>
+  <h1>User</h1>
+<% end %>
+
+<%= render @user %>
+
+<%= link_to "See attractions", attractions_path %>
